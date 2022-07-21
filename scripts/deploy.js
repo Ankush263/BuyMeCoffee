@@ -20,3 +20,8 @@ main()
     console.error(error);
     process.exit(1);
   });
+
+
+
+  //https://eth-goerli.g.alchemy.com/v2/Eo_3ejyNS3BznBvx9EFOpEQNLvWsDsqV
+
