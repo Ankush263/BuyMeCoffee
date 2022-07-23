@@ -24,7 +24,7 @@ contract BuyMeACoffee {
     }
 
     function buyCoffee(string memory _name, string memory _message) payable public {
-        require(msg.value > 0, "Can't buy coffee with 0 eth");
+        // require(msg.value > 0, "Can't buy coffee with 0 eth");
 
         memos.push(Memo(
             msg.sender, 
