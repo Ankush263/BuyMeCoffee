@@ -1,0 +1,26 @@
+* {
+  background-color: rgb(17, 34, 94);
+}
+
+.connect-wallet {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(224, 185, 28);
+  font-size: large;
+  font-weight: 900;
+  color: rgb(1, 5, 8);
+}
+
+.box {
+  border: 1px solid blanchedalmond;
+  padding: 10px;
+  padding-left: 30%;
+  margin: 20px 70px;
+  color: aliceblue;
+}
+
+.input {
+  padding: 10px;
+  margin-right: 20px;
+  color: white;
+}
