@@ -89,7 +89,7 @@ function App() {
         <div className="box">
           <input type="text" placeholder='Enter Name' className='input'  onChange={(e) => setName(e.target.value)} value={name} />
           <input type="text" placeholder='Enter Message' className='input'onChange={(e) => setMessage(e.target.value)} value={message} />
-          <button className='connect-wallet' onClick={submit}>Send 1 ETH</button>
+          <button className='connect-wallet' onClick={submit}>Send 0.001 ETH</button>
         </div>
         {/* <button onClick={execute} className='connect-wallet'>Execute</button> */}
         <div className='box'>
