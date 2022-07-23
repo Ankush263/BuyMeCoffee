@@ -17,6 +17,6 @@ module.exports = {
     }
   },
   paths: {
-    artifacts: './src/artifacts',
+    artifacts: './buymeacoffee/src/artifacts',
   },
 };
