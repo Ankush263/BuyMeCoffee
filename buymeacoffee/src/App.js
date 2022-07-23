@@ -10,7 +10,7 @@ function App() {
   const [message, setMessage] = useState("")
   const [submitAcc, setSubmitAcc] = useState(false)
 
-  const contractAddress = "0x669177e39bE3a2c6631B25b422843932545cEC60"
+  const contractAddress = "0x29F92f4D8356b852560028187f09E3e927716fb3"
   const abi = ABI.abi
   const provider = new ethers.providers.Web3Provider(window.ethereum)
   const signer = provider.getSigner()
@@ -45,7 +45,17 @@ function App() {
     const contract = new ethers.Contract(contractAddress, abi, signer)
     try{
       // await contract.store(112)
-      await contract.buyCoffee(str1, str2)
+      const coffeeTxt = async () =>{
+
+        await contract.buyCoffee(
+          str1, 
+          str2,
+          {value: ethers.utils.parseEther("0.001")}
+        )
+      }
+
+      await coffeeTxt()
+
       const res = await contract.getmemos()
       res.map(r => setName(r[2]))
       res.map(r => setMessage(r[3]))
