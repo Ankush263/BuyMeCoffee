@@ -15,5 +15,8 @@ module.exports = {
       url: GOERLI_URL,
       accounts: [PRIVATE_KEY]
     }
-  }
+  },
+  paths: {
+    artifacts: './src/artifacts',
+  },
 };
